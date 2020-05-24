@@ -25,7 +25,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy target\\JenkinsTomcatPipeline.war \"${tomcatWeb}\\JenkinsTomcatPipeline.war\""
+     bat "copy target\\JenkinsTomcat.war \"${tomcatWeb}\\JenkinsTomcat.war\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
