@@ -5,6 +5,7 @@ node{
    def tomcatStatus = ''
    stage('SCM Checkout'){
      git 'https://github.com/sububiker/JenkinsTomcatPipeline.git'
+    
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
